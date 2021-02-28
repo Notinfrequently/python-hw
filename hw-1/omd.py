@@ -1,23 +1,27 @@
 def show_them_(it): print(it)
 
-duck =  '''
+
+duck = '''
                __
              <(o )___
               ( ._> /
-               `---' 
+               `---'
 '''
+
 options = {'да': True, 'нет': False}
 
 questions = {
-    "puddles" : "Is there puddles?",
-    "cold" : "Is it cold outside?",
-    "shining_sun" : "Is it sunny outside? ",
-    "wind" : "Is it windy outside?",
-    "rain" : "Is it raining outside?"
+    "puddles": "Is there puddles?",
+    "cold": "Is it cold outside?",
+    "shining_sun": "Is it sunny outside? ",
+    "wind": "Is it windy outside?",
+    "rain": "Is it raining outside?"
 }
+
 
 def question_of_(function):
     return questions[function.__name__]
+
 
 def puddles(yes):
     '''Is there puddles?
@@ -27,6 +31,7 @@ def puddles(yes):
     else:
         print("It hasn't been raining for a long time.\n")
 
+
 def cold(yes):
     '''Is it cold outside?
     '''
@@ -35,13 +40,15 @@ def cold(yes):
     else:
         print("Duck do not fear cold!.\n")
 
+
 def shining_sun(yes):
-    '''Is it sunny outside? 
+    '''Is it sunny outside?
     '''
     if yes:
         print("Do ducks need a sunglases?\n")
     else:
         print("Grumpy weather, ay?\n")
+
 
 def wind(yes):
     '''Is it windy outside?
@@ -64,10 +71,11 @@ def rain(yes):
 def ask_duck_about_(function):
     show_them_(question_of_(function))
     option = ''
-    options = {'yes' : True, 'no' : False}
+    options = {'yes': True, 'no': False}
     while option not in options:
         option = input('Выберите: ({}/{}): '.format(*options))
     return function(options[option])
+
 
 if __name__ == "__main__":
     show_them_(duck)
