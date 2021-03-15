@@ -5,10 +5,10 @@
 
 ## Usage example:
 
-From root of repo do
+Из корня репозитория:
 
 
-`python3 make_data.py` - will create *data.csv*
+`python3 make_data.py` - создаст *data.csv*
 
 
 `python3 hw.py --command print_sum` - выведет в консоль красивенький отчет
