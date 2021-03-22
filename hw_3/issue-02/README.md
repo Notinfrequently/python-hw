@@ -1,1 +1,1 @@
-`python -m pytest test_morse.py`
+`python -m pytest pytest_me.py`
