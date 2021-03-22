@@ -114,7 +114,7 @@ def save_summary_as_csv(data: list, file_to_save: str) -> int:
     try:
         file  = open(file_to_save, 'w')
         filednames = ["dep", "size", "min", "max", "avg"]
-        writer = csv.DictWriter(file, filednames)
+        writer = csv.DictWriter(file, filednames, lineterminator='\n')
         for data in summary:
             writer.writerow(data)
     except IOError:
