@@ -1,0 +1,9 @@
+test_example_from_tast (unit_test.Tester) ... ok
+test_nothing (unit_test.Tester) ... ok
+test_one_city (unit_test.Tester) ... ok
+test_two_citys (unit_test.Tester) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
