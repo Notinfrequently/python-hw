@@ -7,7 +7,7 @@ import csv
 # мой провайдер для отдела, очень сложный я писать не стал
 class MyProvider(BaseProvider):
     def department(self):
-        hz = rd.randint(0, 2)
+
         dep_lv_1 = ["Департамент разработки", "Департамент обсулживания клиентов"]
         dep_dev = ["Отдел тестирования", "Отдел програмистов", "Отдел адиминистрирования"]
         dep_client = ["Отдел качества", "Отдел подарков клиентам", "Отдел Еще отдел"]
@@ -54,7 +54,7 @@ def fake_csv_file(file_to_save: str, size: int = 100) -> None:
     try:
         file  = open(file_to_save, 'w')
         filednames = ["name", "position", "department", "coef", "salary"]
-        writer = csv.DictWriter(file, filednames)
+        writer = csv.DictWriter(file, filednames, lineterminator='\n')
         #writer.writeheader()
         for data in fake_data:
             writer.writerow(data)

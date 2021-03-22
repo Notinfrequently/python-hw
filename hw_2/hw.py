@@ -130,6 +130,7 @@ def get_all_departments(data: list) -> set:
     """
     not_unique_departments = list()
     for department in data:
+        #department = department[2].split(" -> ")
         not_unique_departments.append(department[2])
     return set(not_unique_departments)
 
