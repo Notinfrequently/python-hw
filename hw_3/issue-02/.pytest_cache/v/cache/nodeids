@@ -1,0 +1,5 @@
+[
+  "pytest_me.py::test_decode[----O]",
+  "pytest_me.py::test_decode[.-.. --- -. --. .-- --- .-. -..-LONGWORD]",
+  "pytest_me.py::test_decode[... --- ...-SOS]"
+]
