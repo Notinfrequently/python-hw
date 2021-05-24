@@ -113,7 +113,7 @@ def cache_result():
 
     def decorator(func):
         def decorated(*args, **kwargs):
-            if args not in _cache_result:
+            if args not in _cache:
                 _cache[args] = func(*args, **kwargs)
             return _cache[args]
         return decorated

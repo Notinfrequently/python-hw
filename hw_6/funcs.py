@@ -6,7 +6,7 @@ def ilen(iterable: Iterable):
     >>> ilen(foo)
     10
     """
-    return len(list(iterable))
+    return sum([1 for i in iterable])
 
 
 def flatten(iterable: Iterable):
